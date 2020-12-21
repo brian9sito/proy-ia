@@ -178,7 +178,7 @@ datagen = ImageDataGenerator(
 datagen.fit(x_train)
 #Step 13: Montaje del modelo
 # Ajustar el modelo
-epochs = 1
+epochs = 60
 batch_size = 16
 history = model.fit_generator(datagen.flow(x_train,y_train, batch_size=batch_size),
                               epochs = epochs, validation_data = (x_validate,y_validate),
